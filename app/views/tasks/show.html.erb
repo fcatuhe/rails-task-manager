@@ -1,0 +1,4 @@
+<h2><%= @task.done_checkbox %><%= @task.name %></h2>
+<p>Due for <%= @task.readable_due_date %></p>
+<%= link_to "Edit", edit_task_path %>
+<%= link_to "Delete", task_path(@task), method: :delete, data: { confirm: 'Are you sure?' } %>
